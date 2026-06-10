@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jesús Castillo · Dashboard de Proyecto Profesional 2030</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Dashboard profesional e interactivo de Jesús Castillo, estudiante de 8° semestre de Ingeniería de Sistemas en la Universidad Popular del Cesar.">
+  <meta name="author" content="Jesús Enrique Castillo Ballesta">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="app-container">
+
+    <!-- ── HEADER ── -->
+    <header class="header-card col-12">
+      <div class="header-info">
+        <span class="eyebrow-accent">Proyecto Profesional 2030</span>
+        <h1>Jesús Enrique <span>Castillo</span> Ballesta</h1>
+        <div class="header-meta">
+          <div class="meta-badge">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            Ingeniería de Sistemas
+          </div>
+          <div class="meta-badge">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            Fundamentos de Administración
+          </div>
+          <div class="meta-badge semestre-badge">
+            Semestre: 8°
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ── DASHBOARD GRID ── -->
+    <main class="dashboard-grid">
+
+      <!-- PERFIL PROFESIONAL -->
+      <section class="dash-card col-6" id="perfil">
+        <div class="card-title-area">
+          <h2 class="card-title">
+            <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            Perfil Profesional
+          </h2>
+        </div>
+        <p class="profile-text">
+          Ingeniero de sistemas en formación con <strong>visión estratégica</strong> y orientación hacia el análisis de datos, la ciberseguridad y la gestión de proyectos tecnológicos. Me motiva construir tecnología con impacto real en mi región, en las personas cercanas y en el mercado global.
+        </p>
+        <div class="tech-badges-list">
+          <span class="tech-badge">Business Intelligence</span>
+          <span class="tech-badge">Ciberseguridad</span>
+          <span class="tech-badge">Gestión de Proyectos</span>
+          <span class="tech-badge">Emprendimiento Tech</span>
+          <span class="tech-badge">dbt Core / SQL</span>
+          <span class="tech-badge">Python / PySpark</span>
+        </div>
+      </section>
+
+      <!-- DIAGNÓSTICO DE COMPETENCIAS -->
+      <section class="dash-card col-6" id="competencias">
+        <div class="card-title-area">
+          <h2 class="card-title">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+            Diagnóstico de Competencias
+          </h2>
+        </div>
+        <div class="competencias-container">
+          <div class="canvas-wrapper">
+            <canvas id="competenciaRadar"></canvas>
+          </div>
+          <div class="radar-legend">
+            <div class="legend-item" title="Nivel Alto">
+              <span class="legend-dot" style="background-color: var(--success-color);"></span>
+              <span>Competencias Estratégicas</span>
+            </div>
+            <div class="legend-item" title="Nivel Medio">
+              <span class="legend-dot" style="background-color: var(--accent-color);"></span>
+              <span>Técnicas / Ejecución</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MATRIZ DOFA -->
+      <section class="dash-card col-12" id="dofa">
+        <div class="card-title-area">
+          <h2 class="card-title">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/></svg>
+            Matriz DOFA
+          </h2>
+          <span style="font-size: 11.5px; color: var(--text-tertiary);">Pasa el cursor por un cuadrante para ver su Cruce Estratégico</span>
+        </div>
+
+        <div class="dofa-grid">
+          <div class="dofa-quadrant f-quad" data-id="F">
+            <h3 class="quad-title">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              Fortalezas (Internas)
+            </h3>
+            <ul class="quad-list">
+              <li>Aprendizaje acelerado ante nuevos desafíos tecnológicos.</li>
+              <li>Visión holística y analítica para proponer soluciones estructuradas.</li>
+              <li>Pensamiento creativo y metodologías fuera de la caja.</li>
+              <li>Comunicación efectiva y facilidad para la sustentación pública.</li>
+            </ul>
+          </div>
+
+          <div class="dofa-quadrant d-quad" data-id="D">
+            <h3 class="quad-title">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              Debilidades (Internas)
+            </h3>
+            <ul class="quad-list">
+              <li>Tendencia a la procrastinación en ausencia de deadlines estrictos.</li>
+              <li>Inconsistencia ocasional en el ritmo de ejecución sostenida.</li>
+              <li>Perfeccionismo excesivo que retrasa entregas iniciales.</li>
+              <li>Falta de traducción de ideas abstractas a pasos ordenados.</li>
+            </ul>
+          </div>
+
+          <div class="dofa-quadrant o-quad" data-id="O">
+            <h3 class="quad-title">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M23 6l-9.5 9.5-5-5L1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+              Oportunidades (Externas)
+            </h3>
+            <ul class="quad-list">
+              <li>Mercado nacional e internacional con alta demanda de roles en BI y datos.</li>
+              <li>Ascenso global de ofertas laborales remotas con buena remuneración.</li>
+              <li>Disponibilidad de rutas formativas y certificaciones (Cloud/Data).</li>
+              <li>Ecosistema local emergente de emprendimiento digital y startups en el Caribe.</li>
+            </ul>
+          </div>
+
+          <div class="dofa-quadrant a-quad" data-id="A">
+            <h3 class="quad-title">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              Amenazas (Externas)
+            </h3>
+            <ul class="quad-list">
+              <li>Mercado tecnológico local reducido en la ciudad de Valledupar.</li>
+              <li>Automatización mediante inteligencia artificial que reduce empleos Jr.</li>
+              <li>Falta de historial laboral formal al momento del egreso universitario.</li>
+              <li>Alta competitividad frente a profesionales de grandes capitales.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- CRUCE ESTRATÉGICO -->
+      <section class="dash-card col-12" id="cruce">
+        <div class="card-title-area">
+          <h2 class="card-title">
+            <svg viewBox="0 0 24 24"><path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3zM6 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3z"/><path d="M14 8h-4M14 16h-4"/></svg>
+            Cruce Estratégico Matriz
+          </h2>
+        </div>
+
+        <div class="cruce-grid">
+          <div class="cruce-card" data-type="F,O">
+            <div class="cruce-header">
+              <span class="cruce-badge">FO · Ofensiva</span>
+              <span class="cruce-title">Fortalezas + Oportunidades</span>
+            </div>
+            <p class="cruce-desc">Aprovechar mi facilidad de aprendizaje autónomo y mentalidad lógica para especializarme en Big Data y Business Intelligence, apuntando a vacantes de trabajo remoto a nivel nacional.</p>
+          </div>
+
+          <div class="cruce-card" data-type="D,O">
+            <div class="cruce-header">
+              <span class="cruce-badge">DO · Reorientación</span>
+              <span class="cruce-title">Debilidades + Oportunidades</span>
+            </div>
+            <p class="cruce-desc">Superar la procrastinación inscribiéndome en certificaciones profesionales con fechas límite fijas (Databricks, AWS) y sumándome a proyectos de desarrollo en equipo de código abierto.</p>
+          </div>
+
+          <div class="cruce-card" data-type="F,A">
+            <div class="cruce-header">
+              <span class="cruce-badge">FA · Defensiva</span>
+              <span class="cruce-title">Fortalezas + Amenazas</span>
+            </div>
+            <p class="cruce-desc">Utilizar mi capacidad de comunicación y estructuración analítica para construir marca personal, compartiendo código documentado y análisis técnicos en LinkedIn y GitHub.</p>
+          </div>
+
+          <div class="cruce-card" data-type="D,A">
+            <div class="cruce-header">
+              <span class="cruce-badge">DA · Supervivencia</span>
+              <span class="cruce-title">Debilidades + Amenazas</span>
+            </div>
+            <p class="cruce-desc">Mitigar la falta de experiencia laboral inicial participando activamente en hackathones y buscando prácticas universitarias en proyectos de análisis de datos a nivel nacional.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PORTAFOLIO DE PROYECTOS (CRUD) -->
+      <section class="dash-card col-12" id="portafolio-proyectos">
+        <div class="card-title-area">
+          <h2 class="card-title">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            Portafolio de Proyectos Académicos y Personales
+          </h2>
+        </div>
+
+        <div class="portfolio-actions">
+          <div class="filter-group">
+            <button class="filter-btn active" data-filter="todos">Todos</button>
+            <button class="filter-btn" data-filter="datos">Datos & Analítica</button>
+            <button class="filter-btn" data-filter="software">Software & Web</button>
+            <button class="filter-btn" data-filter="ciberseguridad">Ciberseguridad</button>
+          </div>
+
+          <button id="add-project-btn" class="btn-primary">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            Agregar Proyecto
+          </button>
+        </div>
+
+        <div id="projects-container" class="projects-grid">
+          <!-- Renderizado Dinámico mediante JS -->
+        </div>
+      </section>
+
+      <!-- PLAN DE ACCIÓN / ROADMAP -->
+      <section class="dash-card col-12" id="plan">
+        <div class="card-title-area">
+          <h2 class="card-title">
+            <svg viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            Plan de Acción Estratégico (Roadmap)
+          </h2>
+        </div>
+
+        <div class="plan-progress-container">
+          <div class="plan-progress-meta">
+            <span>Progreso General del Plan</span>
+            <span id="plan-progress-percentage">0%</span>
+          </div>
+          <div class="plan-progress-bar-track">
+            <div class="plan-progress-bar-fill"></div>
+          </div>
+        </div>
+
+        <div class="plan-timeline">
+          <div class="timeline-card" data-period="6m" data-status="proceso">
+            <div>
+              <div class="timeline-period">Corto Plazo (6 meses)</div>
+              <h3 class="timeline-title">Visibilidad & Primer Ingreso</h3>
+              <p class="timeline-desc">Publicar 3 repositorios clave en GitHub, activar redes para freelancing y asegurar el inicio de prácticas profesionales o primer cliente.</p>
+            </div>
+            <div class="timeline-status">
+              <span class="status-indicator"></span>
+              <span class="status-text">En Proceso</span>
+            </div>
+          </div>
+
+          <div class="timeline-card" data-period="1a" data-status="pendiente">
+            <div>
+              <div class="timeline-period">Mediano Plazo (1 año)</div>
+              <h3 class="timeline-title">Grado & Freelance Estable</h3>
+              <p class="timeline-desc">Graduarme formalmente de la Universidad Popular del Cesar, obtener certificación oficial en BI / Cloud y retener 2 a 3 clientes estables.</p>
+            </div>
+            <div class="timeline-status">
+              <span class="status-indicator"></span>
+              <span class="status-text">Pendiente</span>
+            </div>
+          </div>
+
+          <div class="timeline-card" data-period="3a" data-status="pendiente">
+            <div>
+              <div class="timeline-period">Largo Plazo (3 años)</div>
+              <h3 class="timeline-title">Ingeniero Mid-Level</h3>
+              <p class="timeline-desc">Consolidar un puesto de Ingeniería de Datos / Analytics en empresa multinacional remota y arrancar estudios de especialización o maestría tech.</p>
+            </div>
+            <div class="timeline-status">
+              <span class="status-indicator"></span>
+              <span class="status-text">Pendiente</span>
+            </div>
+          </div>
+
+          <div class="timeline-card" data-period="5a" data-status="pendiente">
+            <div>
+              <div class="timeline-period">Largo Plazo (5 años)</div>
+              <h3 class="timeline-title">Emprendimiento Propio</h3>
+              <p class="timeline-desc">Fundar una consultora especializada en BI y Analítica de datos para PYMES o lanzar un producto SaaS enfocado en el mercado regional y nacional.</p>
+            </div>
+            <div class="timeline-status">
+              <span class="status-indicator"></span>
+              <span class="status-text">Pendiente</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- REFLEXIÓN FINAL -->
+      <section class="dash-card col-12" id="reflexion">
+        <div class="card-title-area">
+          <h2 class="card-title">
+            <svg viewBox="0 0 24 24"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/></svg>
+            Reflexión Estratégica
+          </h2>
+        </div>
+        <div class="reflexion-box">
+          "Tengo visión para ver el destino, pero me falta estructura para llegar. Mi mayor acción no es aprender más — es publicar lo que ya sé, comprometerse con fechas reales y dejar de esperar el momento perfecto para empezar."
+        </div>
+      </section>
+
+      <!-- FOOTER / MARCA PERSONAL -->
+      <footer class="marca-footer col-12">
+        <div class="marca-footer-info">
+          <strong>Jesús Enrique Castillo Ballesta</strong>
+          Ingeniero de Sistemas en Formación · UPC Valledupar · Fundamentos de Administración · 2026
+        </div>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/jesus-castillo-7620a3342" class="social-link" target="_blank">
+            <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/JesusC2003" class="social-link" target="_blank">
+            <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </footer>
+
+      <p class="academic-note">Universidad Popular del Cesar · Valledupar · 2026</p>
+    </main>
+
+  </div>
+
+  <!-- ── MODAL AGREGAR PROYECTO ── -->
+  <div class="modal-overlay" id="project-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Agregar Proyecto Académico / Personal</h3>
+        <button class="close-modal-btn" id="close-modal">&times;</button>
+      </div>
+      <form id="project-form">
+        <div class="form-group">
+          <label for="proj-title">Título del Proyecto *</label>
+          <input type="text" id="proj-title" class="form-control" required placeholder="Ej: Sistema de Facturación UPC">
+        </div>
+
+        <div class="form-group">
+          <label for="proj-category">Categoría *</label>
+          <select id="proj-category" class="form-control">
+            <option value="software">Software & Web</option>
+            <option value="datos">Datos & Analítica</option>
+            <option value="ciberseguridad">Ciberseguridad</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="proj-desc">Descripción del Proyecto *</label>
+          <textarea id="proj-desc" class="form-control" rows="3" required placeholder="Describe brevemente el alcance del proyecto y tu rol..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="proj-techs">Tecnologías Utilizadas (separadas por comas) *</label>
+          <input type="text" id="proj-techs" class="form-control" required placeholder="Ej: Python, SQL, React, Docker">
+        </div>
+
+        <div class="form-group">
+          <label for="proj-link">Enlace de Repositorio (GitHub / GitLab)</label>
+          <input type="url" id="proj-link" class="form-control" placeholder="https://github.com/tu-usuario/proyecto">
+        </div>
+
+        <div class="form-actions">
+          <button type="button" class="btn-secondary" id="cancel-project">Cancelar</button>
+          <button type="submit" class="btn-primary">Guardar Proyecto</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
